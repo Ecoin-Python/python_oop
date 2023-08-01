@@ -3,14 +3,14 @@
 # +self
 # +constructor __init__
 # Encapsulation 
-# dir method
-# add Attribute
-# delete attribute
-# delete Object 
+# +dir method
+# +add Attribute
+# +delete attribute
+# +delete Object 
 # class attribute
 # +getter setter
-# +Access modifiers
-# Inhertance
+# +Access modifiers public _protected __privated
+# Inheritance
 # method overrride...
 # polymo
 
@@ -66,11 +66,24 @@ class Student:
 # print(std4.__email)
 
 std5 = Student()
-std5.set_val(25)
-std5.set_nom("Sara")
-print(std5.get_nom())
+std6 = Student()
+#std5.set_val(25)
+#std5.set_nom("Sara")
+#print(std5.get_nom())
 
-print(std5.get_val())
+#print(std5.get_val())
 
+print(dir(std5))
+print("=============================================")
+std5.mobile = "055555555"
+print(dir(std5))
+print("=============================================")
+std6.phone = "021212121"
+print(dir(std6))
+print("=============================================")
+del std5.mobile
+print(dir(std5))
+del std5
+print(dir(std5))
 
 
