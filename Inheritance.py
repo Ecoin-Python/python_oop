@@ -34,7 +34,7 @@ class OS:  # Sup class Parent Class
     def stop(self):
         pass
     
-    def display():
+    def display(self):
         print("This is OS System")
 
     
